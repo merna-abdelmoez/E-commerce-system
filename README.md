@@ -1,4 +1,4 @@
-# e-commerce-system
+# E-commerce-system
 
 ## Overview
 This project is a simple Java-based e-commerce system demonstrating core OOP concepts and features typically found in online shopping platforms.
