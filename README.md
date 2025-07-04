@@ -12,14 +12,6 @@ It supports:
 - Generating a detailed checkout receipt including subtotal, shipping fees, total amount, and remaining customer balance.
 - Handling shipping by collecting all shippable items and sending them to a `ShippingService`.
 
-### Core Features:
-- Product types: Expiring and non-expiring
-- Interface-driven shipping for shippable items
-- Cart management with quantity and stock validation
-- Expiry date handling for perishable goods
-- Customer balance checks during checkout
-- Shipping weight calculation and packaging simulation
-- Console-based output: Shipping notice & receipt
 
 ## Project Structure
 ### model contains
