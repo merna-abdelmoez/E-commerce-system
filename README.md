@@ -12,24 +12,32 @@ It supports:
 - Generating a detailed checkout receipt including subtotal, shipping fees, total amount, and remaining customer balance.
 - Handling shipping by collecting all shippable items and sending them to a `ShippingService`.
 
-## Features
-- **Product Types**: Expiring (e.g. Cheese, Biscuits) and non-expiring (e.g. TV, Mobile).
-- **Shipping**: Some products require shipping with weight info, others do not.
-- **Cart Management**: Customers can add available quantities of products to their cart.
-- **Checkout Process**: Validates cart content, product stock and expiry, and customer balance.
-- **Shipping Service**: Aggregates shippable items and calculates total shipment weight.
-- **Console Output**: Displays shipping notice and detailed checkout receipt.
+### Core Features:
+- Product types: Expiring and non-expiring
+- Interface-driven shipping for shippable items
+- Cart management with quantity and stock validation
+- Expiry date handling for perishable goods
+- Customer balance checks during checkout
+- Shipping weight calculation and packaging simulation
+- Console-based output: Shipping notice & receipt
 
 ## Project Structure
-
+### model contains
 - `Product` (abstract base class)
 - `ExpiringProduct` (extends Product, supports expiry date)
 - `NonExpiringProduct` (extends Product)
-- `Shippable` (interface for shippable products)
 - `Cart` (manages items and quantities)
 - `Customer` (with balance tracking)
+- `Cartitem` (represents an individual item in the cart along with its quantity)
+
+### service contains
 - `ShippingService` (handles shipping of shippable items)
+### interfaces contain
+- `Expirable` (Interface for items that have an expiry date)
+- `Shippable` (Interface for products that require shipping with a weight)
+### Main
 - `Main` (demo usage and entry point)
+
 
 
 ## How to Run
