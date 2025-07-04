@@ -1,3 +1,6 @@
+package model;
+import interfaces.Shippable;
+
 public class NonExpiringProduct extends Product implements Shippable {
     private double weight;
 

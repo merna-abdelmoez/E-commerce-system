@@ -1,5 +1,15 @@
 import java.util.*;
 
+import interfaces.Expirable;
+import interfaces.Shippable;
+import model.Cart;
+import model.CartItem;
+import model.Customer;
+import model.ExpiringProduct;
+import model.NonExpiringProduct;
+import model.Product;
+import service.ShippingService;
+
 public class Main {
     public static void main(String[] args) {
         // Products

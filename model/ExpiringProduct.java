@@ -1,3 +1,7 @@
+package model;
+import interfaces.Expirable;
+import interfaces.Shippable;
+
 public class ExpiringProduct extends Product implements Expirable, Shippable {
     private boolean expired;
     private double weight;

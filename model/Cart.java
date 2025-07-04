@@ -1,4 +1,7 @@
+package model;
 import java.util.*;
+
+import interfaces.Shippable;
 
 public class Cart {
     private List<CartItem> items = new ArrayList<>();

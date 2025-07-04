@@ -1,4 +1,7 @@
+package service;
 import java.util.List;
+
+import interfaces.Shippable;
 
 public class ShippingService {
     public static double calculateShippingFee(List<Shippable> items) {

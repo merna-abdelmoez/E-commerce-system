@@ -1,3 +1,4 @@
+package model;
 public abstract class Product {
     protected String name;
     protected double price;
